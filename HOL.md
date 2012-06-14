@@ -267,10 +267,6 @@ _SQL Database Server Dashboard_
 
 	_Publish web application preview page_
 
-	> **Note:** If this is the first time you deploy the web site, you will be prompted to accept a certificate. After the message appears, click **Accept**.
-	>
-	>![Publish web application certificate](images/publish-web-application-certificate.png?raw=true "Publish web application certificate")
-
 1. Once the publishing process finishes, your default browser will open the published web site. Verify that the web site was successfully published in Windows Azure.
 
 	![Application published to Windows Azure](images/application-published-to-windows-azure.png?raw=true "Application published to Windows Azure")
@@ -358,7 +354,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 1. Press **CTRL+SHIFT+B** to build the solution and download the NuGet package dependencies.
 
-1. Open Web.config and update the **PersonContext** connection string using the one obtained from [exercise 1 - task 3](#Ex1Task2). You can also use the following connection string replacing the placeholders.
+1. Open Web.config and update the **PersonContext** connection string using the one obtained from [Exercise 1 - Task 3](#Ex1Task2). You can also use the following connection string replacing the placeholders.
 
 	````XML
 	<connectionStrings>
