@@ -32,7 +32,7 @@ The following is required to complete this hands-on lab:
 - [GIT Version Control System](http://git-scm.com/download)
 - A Windows Azure subscription with the Web Sites Preview enabled - you can sign up for free trial [here](http://bit.ly/WindowsAzureFreeTrial)
 
->**Note:** This lab was designed using Windows 7.
+>**Note:** This lab was designed for Windows 7.
 
 <a name="Setup"/>
 ### Setup ###
@@ -56,7 +56,7 @@ This hands-on lab includes the following exercises:
 - [Exercise 2: Deploying an MVC 4 Application using Git](#Exercise2)
 
 <a name="GettingStarted" />
-### Getting Started: Creating an MVC 4 Appliction using Entity Framework Code First ###
+### Getting Started: Creating an MVC 4 Application using Entity Framework Code First ###
 
 In this section, you will create a simple ASP.NET MVC 4 application, using MVC 4 scaffolding with Entity Framework code first to create the CRUD methods.
 
@@ -81,7 +81,7 @@ In this section, you will create a simple ASP.NET MVC 4 application, using MVC 4
 
 	_Choosing Internet Application_
 
-1. In the Solution Explorer, right-click **Models** and select **Add | Class** to create a simple class person (POCO). Name it _Person_ and click **OK**.
+1. In the Solution Explorer, right-click **Models** and select **Add | Class** to create a person class (POCO). Name it _Person.cs_ and click **OK**.
 
 1. Open the **Person** class and insert the following three properties.
 
@@ -119,7 +119,7 @@ In this section, you will create a simple ASP.NET MVC 4 application, using MVC 4
 
 	_Adding the Person controller with scaffolding_
 	
-1. Click **Add** to create the new controller for **Person** with scaffolding. You have now generated the controller actions as well as the views. 
+1. Click **Add** to create the new controller for **Person** with scaffolding. You have generated the controller actions as well as the views. 
 		
 	![After creating the Person controller with scaffolding ](images/person-scaffolding.png?raw=true "After creating the Person controller with scaffolding")
 
@@ -204,27 +204,17 @@ You will need a SQL Database server for storing the application database. You ca
 
 _SQL Database Server Dashboard_
 
-1. Go back to the MVC 4 solution, open the **Web.config** file.
+1. In the next task you will test the database connection from Visual Studio, for that reason you need to include your local IP address in the server's list of **Allowed IP Addresses**. To do that, click **Configure**, select the IP address from **Current Client IP Address** and paste it on the **Start IP Address** and **End IP Address** text boxes and click the ![add-client-ip-address-ok-button](images/add-client-ip-address-ok-button.png?raw=true) button.
 
-1. Locate the **PersonContext** connection string, and update it with the following highlighted code. Update the placeholders with your SQL Database server URL, administrator login and password.
-	
-	<!-- mark:4 -->
+	![Adding Client IP Address](images/add-client-ip-address.png?raw=true)
 
-	````XML
-	<connectionStrings>
-		...
-		<add name="PersonContext" connectionString="Server=tcp:[SERVER_URL],1433;Database=MVC4SampleDB;User ID=[ADMINISTRATOR_LOGIN];Password=[PASSWORD];Trusted_Connection=False;Encrypt=True;Connection Timeout=30;"
-      providerName="System.Data.SqlClient" />
-  </connectionStrings>
-	````
+	_Adding Client IP Address_
 
-	> **Note:** Notice that, as you are using Entity Framework Code First approach, the database will be created the first time you run the application.
-	> By default, it creates a SQL Database with the default settings:
-	>
-	> - Max Size: _1GB_
-	> - Edition: _WEB_
-	> 
-	> You can update the SQL Database settings within **Databases** section in the [Windows Azure Management Portal](http://manage.windowsazure.com/).
+1. Once the **Client IP Address** is added to the allowed IP addresses list, click on **Save** to confirm the changes.
+
+	![Confirm Changes](images/add-client-ip-address-confirm.png?raw=true)
+
+	_Confirm Changes_
 
 <a name="Ex1Task2" />
 #### Task 3 – Publishing an ASP.NET MVC 4 Application using Web Deploy ####
@@ -247,11 +237,29 @@ _SQL Database Server Dashboard_
 
 	_Setting up Web Deploy connection_
 
-1. In the **Settings** page, leave the default values and click **Next**.
+1. In the **Settings** page, under the **Databases** section, click the button next to the **PersonContext** textbox.
 
-	![Setting up additional Settings](images/setting-up-additional-settings.png?raw=true "Setting up additional Settings")
+	![Web deploy configuration](images/web-deploy-configuration.png?raw=true "Web deploy configuration")
 
-	_Setting up additional Settings_
+	_Web deploy configuration_
+
+1. Configure the database connection as follows:
+	* In the **Server name** type your SQL Database server URL using the _tcp:_ prefix.
+	* In **User name** type your server administrator login name.
+	* In **Password** type your server administrator login password.
+	* Type a new database name, for example: _MVC4SampleDB_.
+
+	![Configuring destination connection string](images/configuring-destination-connection-string.png?raw=true "Configuring destination connection string")
+
+	_Configuring destination connection string_
+
+1. Then click **OK**. When prompted to create the database click **Yes**.
+
+	![Creating the database](images/creating-the-database.png?raw=true "Creating the database string")
+
+	_Creating the database_
+
+1. Copy the connection string value from **PersonContext** to use it later. Then click **Next**.
 
 1. In the **Publish** page, click **Publish** to begin the application publishing process.
 
@@ -259,19 +267,7 @@ _SQL Database Server Dashboard_
 
 	_Publish web application preview page_
 
-	> **Note:** If this is the first time you deploy the web site, you will be prompted to accept a certificate. After the message appears, click **Accept**.
-	>
-	>![Publish web application certificate](images/publish-web-application-certificate.png?raw=true "Publish web application certificate")
-
-1. Once the publishing process finishes, switch back to the Windows Azure Management Portal.
-
-1. In the **Dashboard** page of the Web Site, under the **quick glance** section, click the **Site URL** link in order to browse to your published web site.
-
-	![Opening the Published Site](images/opening-the-published-site.png?raw=true "Opening the Published Site")
-
-	_Opening the published web site_
-
-1. Verify that the web site was successfully published in Windows Azure.
+1. Once the publishing process finishes, your default browser will open the published web site. Verify that the web site was successfully published in Windows Azure.
 
 	![Application published to Windows Azure](images/application-published-to-windows-azure.png?raw=true "Application published to Windows Azure")
 
@@ -287,6 +283,10 @@ _SQL Database Server Dashboard_
 
 <a name="Exercise2" />
 ### Exercise 2: Deploying an MVC 4 Application using Git ###
+
+In this exercise you will publish again the web application you created in exercise 1, but this time using Git.
+
+If you did not executed exercise 1 you can still perform this exercise by deploying the site in the **Source\Assets** folder of this lab.
 
 <a name="Ex2Task1" />
 #### Task 1 – Creating a New Web Site from the Windows Azure Portal ####
@@ -348,7 +348,21 @@ _SQL Database Server Dashboard_
 
 
 <a name="Ex2Task3" />  
-#### Task 3 – Push the Application to the Git Repository ####
+#### Task 3 – Pushing the Application to the Git Repository ####
+
+1. Open the solution you have obtained in [exercise 1](#Exercise1) with Visual Studio. Alternatively, you can open the **MVC4Sample.Web** solution located in the **Source\Assets** folder of this lab.
+
+1. Press **CTRL+SHIFT+B** to build the solution and download the NuGet package dependencies.
+
+1. Open Web.config and update the **PersonContext** connection string using the one obtained from [Exercise 1 - Task 3](#Ex1Task2). You can also use the following connection string replacing the placeholders.
+
+	````XML
+	<connectionStrings>
+	 ...
+	 <add name="PersonContext" connectionString="Data Source=tcp:{SERVER_URL};Initial Catalog=MVC4SampleDB;User ID={SERVER_ADMIN_LOGIN};Password={PASSWORD}"
+		providerName="System.Data.SqlClient" />
+	</connectionStrings>
+	````
 
 1. Go to web site's **Dashboard** and copy the **Git Clone URL** value. You will use it later in this task.
 
@@ -356,9 +370,7 @@ _SQL Database Server Dashboard_
 
 	_Copy Git Clone URL_
 
-1. Open a new **Git Bash** console and insert the following code. Update the _[YOUR-APPLICATION-PATH]_ placeholder with the path of the MVC 4 solution you've created in [exercise 1](#Exercise1). 
-
-	> **Note:** You can also get a solution to deploy from the **Source\Assets** folder of this lab. But first, you need to open it with Visual Studio, build it to download the NuGet package dependencies and update the **PersonContext** connection string in Web.config to point to a Windows Azure SQL Database. See [Task 3 from Exercise 1](Ex2Task3).
+1. Open a new **Git Bash** console and insert the following code. Update the _[YOUR-APPLICATION-PATH]_ placeholder with the path of the MVC 4 solution you've opened. 
 	
 	<!-- mark:1-4 -->
 	````CommandPrompt
@@ -372,7 +384,7 @@ _SQL Database Server Dashboard_
 
 	_Git initialization and first commit_
 
-1. Push your web site to the remote **Git** repository by running the following command. Replace the placeholder with the URL you obtained from the Windows Azure Management Portal. You will be promted for your deployment password.
+1. Push your web site to the remote **Git** repository by running the following command. Replace the placeholder with the URL you obtained from the Windows Azure Management Portal. You will be prompted for your deployment password.
 
 	<!-- mark:1-2 -->
 	````CommandPrompt
@@ -414,7 +426,6 @@ _SQL Database Server Dashboard_
 
 	_Application Running in Windows Azure_
 	
-
 1. Go to **/Person** to verify that the Persons views are working as expected. You can try adding a new Person to verify it is successfully saved to the database.
 
 	![Application Running](images/application-running.png?raw=true "Application Running")
