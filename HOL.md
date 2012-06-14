@@ -206,17 +206,17 @@ _SQL Database Server Dashboard_
 
 1. Go back to the MVC 4 solution, open the **Web.config** file.
 
-1. Locate the **PersonContext** connection string, and update it with the following highlighted code. Update the placeholders with your SQL Database server URL, administrator login and password.
-	
-	<!-- mark:4 -->
+1. In the next task you will test the database connection from Visual Studio, for that reason you need to include your local IP address in the server's list of **Allowed IP Addresses**. To do that, click **Configure**, select the IP address from **Current Client IP Address** and paste it on the **Start IP Address** and **End IP Address** text boxes and click the ![add-client-ip-address-ok-button](images/add-client-ip-address-ok-button.png?raw=true) button.
 
-	````XML
-	<connectionStrings>
-		...
-		<add name="PersonContext" connectionString="Server=tcp:[SERVER_URL],1433;Database=MVC4SampleDB;User ID=[ADMINISTRATOR_LOGIN];Password=[PASSWORD];Trusted_Connection=False;Encrypt=True;Connection Timeout=30;"
-      providerName="System.Data.SqlClient" />
-  </connectionStrings>
-	````
+	![Adding Client IP Address](images/add-client-ip-address.png?raw=true)
+
+	_Adding Client IP Address_
+
+1. Once the **Client IP Address** is added to the allowed IP addresses list, click on **Save** to confirm the changes.
+
+	![Confirm Changes](images/add-client-ip-address-confirm.png?raw=true)
+
+	_Confirm Changes_
 
 <a name="Ex1Task2" />
 #### Task 3 – Publishing an ASP.NET MVC 4 Application using Web Deploy ####
@@ -360,7 +360,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 1. Press **CTRL+SHIFT+B** to build the solution and download the NuGet package dependencies.
 
-1. Open Web.config and update the **PersonContext** connection string using the one obtained from [exercise 1 - task 3](Ex1Task3). You can also use the following connection string replacing the placeholders.
+1. Open Web.config and update the **PersonContext** connection string using the one obtained from [exercise 1 - task 3](#Ex1Task2). You can also use the following connection string replacing the placeholders.
 
 	````XML
 	<connectionStrings>
