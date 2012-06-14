@@ -360,7 +360,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 1. Press **CTRL+SHIFT+B** to build the solution and download the NuGet package dependencies.
 
-1. Open Web.config and update the **PersonContext** connection string using the one obtained from [exercise 1 - task 3](Ex1Task3). You can also use the following connection string replacing the placeholders.
+1. Open Web.config and update the **PersonContext** connection string using the one obtained from [exercise 1 - task 3](#Ex1Task2). You can also use the following connection string replacing the placeholders.
 
 	````XML
 	<connectionStrings>
