@@ -32,7 +32,7 @@ The following is required to complete this hands-on lab:
 - [GIT Version Control System](http://git-scm.com/download)
 - A Windows Azure subscription with the Web Sites Preview enabled - you can sign up for free trial [here](http://bit.ly/WindowsAzureFreeTrial)
 
->**Note:** This lab was designed using Windows 7.
+>**Note:** This lab was designed for Windows 7.
 
 <a name="Setup"/>
 ### Setup ###
@@ -56,7 +56,7 @@ This hands-on lab includes the following exercises:
 - [Exercise 2: Deploying an MVC 4 Application using Git](#Exercise2)
 
 <a name="GettingStarted" />
-### Getting Started: Creating an MVC 4 Appliction using Entity Framework Code First ###
+### Getting Started: Creating an MVC 4 Application using Entity Framework Code First ###
 
 In this section, you will create a simple ASP.NET MVC 4 application, using MVC 4 scaffolding with Entity Framework code first to create the CRUD methods.
 
@@ -204,8 +204,6 @@ You will need a SQL Database server for storing the application database. You ca
 
 _SQL Database Server Dashboard_
 
-1. Go back to the MVC 4 solution, open the **Web.config** file.
-
 1. In the next task you will test the database connection from Visual Studio, for that reason you need to include your local IP address in the server's list of **Allowed IP Addresses**. To do that, click **Configure**, select the IP address from **Current Client IP Address** and paste it on the **Start IP Address** and **End IP Address** text boxes and click the ![add-client-ip-address-ok-button](images/add-client-ip-address-ok-button.png?raw=true) button.
 
 	![Adding Client IP Address](images/add-client-ip-address.png?raw=true)
@@ -261,7 +259,7 @@ _SQL Database Server Dashboard_
 
 	_Creating the database_
 
-1. Copy the connection string from **PersonContext** to use it later. Then click **Next**.
+1. Copy the connection string value from **PersonContext** to use it later. Then click **Next**.
 
 1. In the **Publish** page, click **Publish** to begin the application publishing process.
 
@@ -273,7 +271,7 @@ _SQL Database Server Dashboard_
 	>
 	>![Publish web application certificate](images/publish-web-application-certificate.png?raw=true "Publish web application certificate")
 
-1. Once the publishing process finishes, your default brorser will open the published web site. Verify that the web site was successfully published in Windows Azure.
+1. Once the publishing process finishes, your default browser will open the published web site. Verify that the web site was successfully published in Windows Azure.
 
 	![Application published to Windows Azure](images/application-published-to-windows-azure.png?raw=true "Application published to Windows Azure")
 
@@ -390,7 +388,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 	_Git initialization and first commit_
 
-1. Push your web site to the remote **Git** repository by running the following command. Replace the placeholder with the URL you obtained from the Windows Azure Management Portal. You will be promted for your deployment password.
+1. Push your web site to the remote **Git** repository by running the following command. Replace the placeholder with the URL you obtained from the Windows Azure Management Portal. You will be prompted for your deployment password.
 
 	<!-- mark:1-2 -->
 	````CommandPrompt
