@@ -17,7 +17,7 @@
 		<dependency
 			hint="WebToolsExtensionPublishingVS2010_Only_1_0"
 			name="Microsoft Web Publish for Visual Studio 2010 (June 2012)"
-			helpLink="http://go.microsoft.com/fwlink/?LinkID=231172"
+			helpLink=""
 			type="WebPI" />
 		<dependency 
 			hint="Git version *" 
