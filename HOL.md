@@ -216,7 +216,7 @@ _SQL Database Server Dashboard_
 
 	_Confirm Changes_
 
-<a name="Ex1Task2" />
+<a name="Ex1Task3" />
 #### Task 3 – Publishing an ASP.NET MVC 4 Application using Web Deploy ####
 
 1. If not already opened, open the MVC 4 application you obtained in the **Getting Started** section. In the **Solution Explorer**,  right-click the web site project and select **Publish**.
@@ -354,7 +354,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 1. Press **CTRL+SHIFT+B** to build the solution and download the NuGet package dependencies.
 
-1. Open Web.config and update the **PersonContext** connection string using the one obtained from [Exercise 1 - Task 3](#Ex1Task2). You can also use the following connection string replacing the placeholders.
+1. Open Web.config and update the **PersonContext** connection string using the one obtained from [Exercise 1 - Task 3](#Ex1Task3). You can also use the following connection string replacing the placeholders.
 
 	````XML
 	<connectionStrings>
