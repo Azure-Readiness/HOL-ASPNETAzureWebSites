@@ -1,8 +1,8 @@
-﻿<a name="Title" />
+<a name="Title"></a>
 # Building and Publishing ASP.NET Applications with Windows Azure Web Sites and Visual Studio 2010 #
 
 ---
-<a name="Overview" />
+<a name="Overview"></a>
 ## Overview ##
 
 Web site publication and deployment has never been easier in Windows Azure. Using familiar tools such as Web Deploy or Git, and virtually no changes to the development workflow, Windows Azure Web Sites is the next step in Microsoft Azure platform for web developers. 
@@ -11,7 +11,7 @@ In this hands-on lab, you will explore the basic elements of the **Windows Azure
 
 Starting from a simple model class, and without writing a single line of code, you will create a controller that will contain all the CRUD operations, as well as the all the necessary views. After publishing and running the solution, you will have the application database generated in your SQL Database server, together with the MVC logic and views for data manipulation.
 
-<a name="Objectives" />
+<a name="Objectives"></a>
 ### Objectives ###
 
 In this Hands-on Lab, you will learn how to:
@@ -21,20 +21,22 @@ In this Hands-on Lab, you will learn how to:
 - Deploy the application using Web Deploy
 - Create a new web site with Git Repository enabled to publish the ASP.NET MVC 4 application using Git
 
-<a name="Prerequisites" />
+<a name="Prerequisites"></a>
 ### Prerequisites ###
 
 The following is required to complete this hands-on lab:
 
 - [Microsoft Visual Studio 2010](http://msdn.microsoft.com/vstudio/products/) with Service Pack 1
 - [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4/)
-- [Microsoft Web Publish for Visual Studio 2010 (June 2012)] (http://www.microsoft.com/web/gallery/install.aspx?appid=WebToolsExtensionPublishingVS2010_Only_1_0)
+- [Microsoft Web Publish for Visual Studio 2010 (June 2012)][0]
 - [GIT Version Control System](http://git-scm.com/download)
-- A Windows Azure subscription with the Web Sites Preview enabled - you can sign up for free trial [here](http://bit.ly/WindowsAzureFreeTrial)
+- A Windows Azure subscription with the Web Sites Preview enabled - [sign up for free trial](http://aka.ms/WATK-FreeTrial)
+
+[0]: http://www.microsoft.com/web/gallery/install.aspx?appid=WebToolsExtensionPublishingVS2010_Only_1_0
 
 >**Note:** This lab was designed for Windows 7.
 
-<a name="Setup"/>
+<a name="Setup"></a>
 ### Setup ###
 
 In order to execute the exercises in this hands-on lab you need to set up your environment.
@@ -46,7 +48,7 @@ In order to execute the exercises in this hands-on lab you need to set up your e
 >**Note:** Make sure you have checked all the dependencies for this lab before running the setup. 
 
 ---
-<a name="Exercises" />
+<a name="Exercises"></a>
 ## Exercises ##
 
 This hands-on lab includes the following exercises:
@@ -55,12 +57,12 @@ This hands-on lab includes the following exercises:
 - [Exercise 1: Deploying an MVC 4 Application using Web Deploy](#Exercise1)
 - [Exercise 2: Deploying an MVC 4 Application using Git](#Exercise2)
 
-<a name="GettingStarted" />
+<a name="GettingStarted"></a>
 ### Getting Started: Creating an MVC 4 Application using Entity Framework Code First ###
 
 In this section, you will create a simple ASP.NET MVC 4 application, using MVC 4 scaffolding with Entity Framework code first to create the CRUD methods.
 
-<a name="GettingStartedTask1" />
+<a name="GettingStartedTask1"></a>
 #### Task 1 – Creating an ASP.NET MVC 4 Application in Visual Studio ####
 
 1. Open **Visual Studio 2010** and click **File** | **New** | **Project**.
@@ -135,12 +137,12 @@ In this section, you will create a simple ASP.NET MVC 4 application, using MVC 4
 
 ---
 
-<a name="Exercise1" />
+<a name="Exercise1"></a>
 ### Exercise 1: Deploying an MVC 4 Application using Web Deploy ###
 
 In this exercise you will create a new web site from the Windows Azure Management Portal and publish the application you obtained in the Getting Started, taking advantage of the Web Deploy publishing feature provided by Windows Azure.
 
-<a name="Ex1Task1" />
+<a name="Ex1Task1"></a>
 #### Task 1 – Creating a New Web Site from the Windows Azure Portal ####
 
 1. Go to the [Windows Azure Management Portal](https://manage.windowsazure.com) and sign in using your Windows account credentials.
@@ -195,7 +197,7 @@ In this exercise you will create a new web site from the Windows Azure Managemen
 	
 	_Saving the publish profile file_
 
-<a name="Ex1Task2" />
+<a name="Ex1Task2"></a>
 #### Task 2 – Configuring the Database Server ####
 
 You will need a SQL Database server for storing the application database. You can view the SQL Database servers from your subscription in the portal at **Sql Databases** | **Server**. If you do not have a server created, you can create one using the **Add** button at the bottom of the page. Make note of the **server name and URL, administrator login name and password**, as you will use them next. Do not create the database yet, as it will be created by Entity Framework when running the application.
@@ -216,7 +218,7 @@ _SQL Database Server Dashboard_
 
 	_Confirm Changes_
 
-<a name="Ex1Task3" />
+<a name="Ex1Task3"></a>
 #### Task 3 – Publishing an ASP.NET MVC 4 Application using Web Deploy ####
 
 1. If not already opened, open the MVC 4 application you obtained in the **Getting Started** section. In the **Solution Explorer**,  right-click the web site project and select **Publish**.
@@ -281,14 +283,14 @@ _SQL Database Server Dashboard_
 
 ---
 
-<a name="Exercise2" />
+<a name="Exercise2"></a>
 ### Exercise 2: Deploying an MVC 4 Application using Git ###
 
 In this exercise you will publish again the web application you created in exercise 1, but this time using Git.
 
 If you did not executed exercise 1 you can still perform this exercise by deploying the site in the **Source\Assets** folder of this lab.
 
-<a name="Ex2Task1" />
+<a name="Ex2Task1"></a>
 #### Task 1 – Creating a New Web Site from the Windows Azure Portal ####
 
 1. Go to the [Windows Azure Management Portal](https://manage.windowsazure.com/) and sign in using your Microsoft account associated with your subscription.
@@ -323,7 +325,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 	_Web site running_
 
-<a name="Ex2Task2" />  
+<a name="Ex2Task2"></a>  
 #### Task 2 – Setting up Git publishing ####
 
 1. Go back to the Windows Azure Management Portal. In the **Web Sites** section, locate the web site you created in the previous task and open its dashboard. To do this, click the web site's **Name**. 
@@ -347,7 +349,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 	_Git repository is ready_
 
 
-<a name="Ex2Task3" />  
+<a name="Ex2Task3"></a>  
 #### Task 3 – Pushing the Application to the Git Repository ####
 
 1. Open the solution you have obtained in [exercise 1](#Exercise1) with Visual Studio. Alternatively, you can open the **MVC4Sample.Web** solution located in the **Source\Assets** folder of this lab.
@@ -434,6 +436,6 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 ---
 
-<a name="Summary" />
+<a name="Summary"></a>
 ## Summary ##
 In this hands-on lab, you have created a new MVC web site using MVC 4 Scaffolding and published it to Windows Azure Web Sites. Web site publication and deployment has never been easier in Windows Azure. Using familiar tools such as Web Deploy or GIT, and virtually no changes to the development workflow, Windows Azure Web Sites is the next step in the Microsoft Azure platform for web developers. 
