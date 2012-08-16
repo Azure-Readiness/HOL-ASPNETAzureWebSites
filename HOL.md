@@ -30,7 +30,7 @@ The following is required to complete this hands-on lab:
 - [ASP.NET MVC 4](http://www.asp.net/mvc/mvc4/)
 - [Microsoft Web Publish for Visual Studio 2010 (June 2012)][0]
 - [GIT Version Control System](http://git-scm.com/download)
-- A Windows Azure subscription with the Web Sites Preview enabled - [sign up for free trial](http://aka.ms/WATK-FreeTrial)
+- A Windows Azure subscription with the Web Sites Preview enabled - [sign up for a free trial](http://aka.ms/WATK-FreeTrial)
 
 [0]: http://www.microsoft.com/web/gallery/install.aspx?appid=WebToolsExtensionPublishingVS2010_Only_1_0
 
