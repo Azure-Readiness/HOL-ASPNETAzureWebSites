@@ -69,19 +69,19 @@ In this section, you will create a simple ASP.NET MVC 4 application, using MVC 4
 
 1. Open **Visual Studio 2010** and click **File** | **New** | **Project**.
 
-	![Creating a new project](Images/new-website-vs2010.png?raw=true "Crating a new project")
+	![Creating a new project](images/new-website-vs2010.png?raw=true "Crating a new project")
 
 	_Creating a new project_
 
 1. Create a new **ASP.NET MVC 4 Web Application** and name it **MVC4Sample.Web**.
 
-	![Creating a new ASP.NET MVC 4 Web Application](Images/mvc4-sample.png?raw=true "Creating a new ASP.NET MVC 4 Web Application")
+	![Creating a new ASP.NET MVC 4 Web Application](images/mvc4-sample.png?raw=true "Creating a new ASP.NET MVC 4 Web Application")
 
 	_Creating a new ASP.NET MVC 4 Web Application_
 
 1. Select **Internet Application** and click **OK**.
 
-	![Choosing Internet Application](Images/internet-application.png?raw=true "Choosing Internet Application")
+	![Choosing Internet Application](images/internet-application.png?raw=true "Choosing Internet Application")
 
 	_Choosing Internet Application_
 
@@ -121,19 +121,19 @@ In this section, you will create a simple ASP.NET MVC 4 application, using MVC 4
 
 	- In the **Views** drop-down list, make sure that **Razor** is selected.
 
-	![Adding the Person controller with scaffolding](Images/add-person-controller.png?raw=true "Adding the Person controller with scaffolding")
+	![Adding the Person controller with scaffolding](images/add-person-controller.png?raw=true "Adding the Person controller with scaffolding")
 
 	_Adding the Person controller with scaffolding_
 	
 1. Click **Add** to create the new controller for **Person** with scaffolding. You have generated the controller actions as well as the views. 
 		
-	![After creating the Person controller with scaffolding ](Images/person-scaffolding.png?raw=true "After creating the Person controller with scaffolding")
+	![After creating the Person controller with scaffolding ](images/person-scaffolding.png?raw=true "After creating the Person controller with scaffolding")
 
 	_After creating the Person controller with scaffolding_
 
 1. Open the **PersonController.cs** file in the **Controllers** folder. Notice that the CRUD action methods have been generated automatically. 
 
-	![Inside the Person controller](Images/person-controller-code.png?raw=true "Inside the Person controller")
+	![Inside the Person controller](images/person-controller-code.png?raw=true "Inside the Person controller")
 
 	_Inside the Person controller_
 
@@ -151,13 +151,13 @@ In this exercise, you will create a new web site in the Windows Azure Management
 
 1. Go to the [Windows Azure Management Portal](https://manage.windowsazure.com) and sign in using your Windows account credentials.
 
-	![Log on to the Windows Azure portal](Images/login.png?raw=true "Log on to the Windows Azure portal")
+	![Log on to the Windows Azure portal](images/login.png?raw=true "Log on to the Windows Azure portal")
 
 	_Log on to the Windows Azure Management Portal_
 
 1. Click **New** at the bottom of the page.
 
-	![Creating a new Web Site](Images/new-website.png?raw=true "Creating a new Web Site")
+	![Creating a new Web Site](images/new-website.png?raw=true "Creating a new Web Site")
 
 	_Creating a new Web Site_
 
@@ -165,7 +165,7 @@ In this exercise, you will create a new web site in the Windows Azure Management
 
 	> **Note:** A Windows Azure Web Site is the host for a web application running in the cloud that you can control and manage. The Quick Create option allows you to deploy a completed web application to the Windows Azure Web Site from outside the portal. It does not include steps for setting up a database.
 
-	![Creating a new Web Site using Quick Create](Images/quick-create.png?raw=true "Creating a new Web Site using Quick Create")
+	![Creating a new Web Site using Quick Create](images/quick-create.png?raw=true "Creating a new Web Site using Quick Create")
 
 	_Creating a new web site using Quick Create_
 
@@ -175,27 +175,27 @@ In this exercise, you will create a new web site in the Windows Azure Management
 	
 	> Windows Azure offers 3 modes for users to run their web sites - Free, Shared, and Reserved. In Free and Shared mode, all web sites run in a multi-tenant environment and have quotas for CPU, Memory, and Network usage. You can mix and match which sites are Free (strict quotas) vs. Shared (more relaxed quotas). The maximum number of free sites may vary with your plan. The Reserved mode applies to ALL of your sites and makes them run on dedicated virtual machines that correspond to the standard Azure compute resources. You can find the Web Sites Mode configuration in the **Scale** menu of your Web Site.
 
-	> ![Web Site Modes](Images/web-site-modes.png?raw=true "Web Site Modes")
+	> ![Web Site Modes](images/web-site-modes.png?raw=true "Web Site Modes")
 
 	> If you are using **Shared** or **Reserved** mode, you will be able to manage custom domains for your Web Site. To do so, go to the **Configure** menu of your Web Site and click **Manage Domains**.
 
-	> ![Manage Domains](Images/manage-domains.png?raw=true "Manage Domains")
+	> ![Manage Domains](images/manage-domains.png?raw=true "Manage Domains")
 
-	> ![Manage Custom Domains](Images/manage-custom-domains.png?raw=true "Manage Custom Domains")
+	> ![Manage Custom Domains](images/manage-custom-domains.png?raw=true "Manage Custom Domains")
 
 1. Once the web site is created, click the link under the **URL** column. Check that the new web site is working.
 
-	![Browsing to the new web site](Images/navigate-website.png?raw=true "Browsing to the new web site")
+	![Browsing to the new web site](images/navigate-website.png?raw=true "Browsing to the new web site")
 
 	_Browsing to the new web site_
 
-	![Web site running](Images/website-working.png?raw=true "Web site running")
+	![Web site running](images/website-working.png?raw=true "Web site running")
 
 	_Web site running_
 
 1. Go back to the portal and click the name of the web site under the **Name** column to display the management pages.
 
-	![Opening the web site management pages](Images/go-to-the-dashboard.png?raw=true "Opening the web site management pages")
+	![Opening the web site management pages](images/go-to-the-dashboard.png?raw=true "Opening the web site management pages")
 	
 	_Opening the Web Site management pages_
 
@@ -203,13 +203,13 @@ In this exercise, you will create a new web site in the Windows Azure Management
 
 	> **Note:** The _publish profile_ contains all of the information required to publish a web application to a Windows Azure website for each enabled publication method. The publish profile contains the URLs, user credentials and database strings required to connect to and authenticate against each of the endpoints for which a publication method is enabled. Both **Microsoft WebMatrix** and **Microsoft Visual Studio** support reading publish profiles to automate configuration of these programs for publishing web applications to Windows Azure websites. 
 
-	![Downloading the web site publish profile](Images/download-publish-profile.png?raw=true "Downloading the web site publish profile")
+	![Downloading the web site publish profile](images/download-publish-profile.png?raw=true "Downloading the web site publish profile")
 	
 	_Downloading the Web Site publish profile_
 
 1. Download the publish profile file to a known location. Later in this exercise you will see how to import this file to publish a web application to Windows Azure Web Sites.
 
-	![Saving the publish profile file](Images/save-link.png?raw=true "Saving the publish profile")
+	![Saving the publish profile file](images/save-link.png?raw=true "Saving the publish profile")
 	
 	_Saving the publish profile file_
 
@@ -219,19 +219,19 @@ In this exercise, you will create a new web site in the Windows Azure Management
 1. You will need a SQL Database server for storing the application database. You can view the SQL Database servers from your subscription in the portal at **Sql Databases** | **Servers**. If you do not have a server created, you can create one using the **Add** button at the bottom of the page. Make note of the server **NAME**, **MANAGE URL**, and **ADMINISTRATOR LOGIN**, and obtain the server's password, which is not shown in the portal. You will use this information next.
 Do not create the database yet, as it will be created by Entity Framework when running the application.
 
-	![SQL Database Server Dashboard](Images/sql-database-server-dashboard.png?raw=true "SQL Database Server Dashboard")
+	![SQL Database Server Dashboard](images/sql-database-server-dashboard.png?raw=true "SQL Database Server Dashboard")
 
 	_SQL Database Server Dashboard_
 
-1. In the next task, you will test the database connection from Visual Studio. For that reason, you need to include your local IP address in the server's list of **Allowed IP Addresses**. To do that, click **Configure**, and then click the ![add-client-ip-address-ok-button](Images/add-client-ip-address-ok-button.png?raw=true) button next to the the IP address labeled **CURRENT CLIENT IP ADDRESS**.
+1. In the next task, you will test the database connection from Visual Studio. For that reason, you need to include your local IP address in the server's list of **Allowed IP Addresses**. To do that, click **Configure**, and then click the ![add-client-ip-address-ok-button](images/add-client-ip-address-ok-button.png?raw=true) button next to the the IP address labeled **CURRENT CLIENT IP ADDRESS**.
 
-	![Adding Client IP Address](Images/add-client-ip-address.png?raw=true)
+	![Adding Client IP Address](images/add-client-ip-address.png?raw=true)
 
 	_Adding Client IP Address_
 
 1. Once the **Client IP Address** is added to the allowed IP addresses list, click **Save** to confirm the changes.
 
-	![Confirm Changes](Images/add-client-ip-address-confirm.png?raw=true)
+	![Confirm Changes](images/add-client-ip-address-confirm.png?raw=true)
 
 	_Confirm Changes_
 
@@ -240,25 +240,25 @@ Do not create the database yet, as it will be created by Entity Framework when r
 
 1. If not already opened, open the MVC 4 application you obtained in the **Getting Started** section. In the **Solution Explorer**,  right-click the web site project and select **Publish**.
 
-	![Publishing the web site](Images/publishing-the-web-site.png?raw=true "Publishing the web site")
+	![Publishing the web site](images/publishing-the-web-site.png?raw=true "Publishing the web site")
 
 	_Publishing the web site_
 
 1. In the **Profile** page, click **Import** and select the profile settings file you downloaded earlier in this exercise. Click **Next**.
 
-	![Importing the Profile Settings File](Images/importing-the-profile-settings-file.png?raw=true "Importing the Profile Settings File")
+	![Importing the Profile Settings File](images/importing-the-profile-settings-file.png?raw=true "Importing the Profile Settings File")
 
 	_Importing the Profile Settings File_
 
 1. In the **Connection** page, leave the imported values and click **Next**.
 
-	![Setting up Web Deploy connection](Images/setting-up-web-deploy-connection.png?raw=true "Setting up Web Deploy connection")
+	![Setting up Web Deploy connection](images/setting-up-web-deploy-connection.png?raw=true "Setting up Web Deploy connection")
 
 	_Setting up Web Deploy connection_
 
 1. In the **Settings** page, under the **Databases** section, click the button next to the **PersonContext** textbox.
 
-	![Web deploy configuration](Images/web-deploy-configuration.png?raw=true "Web deploy configuration")
+	![Web deploy configuration](images/web-deploy-configuration.png?raw=true "Web deploy configuration")
 
 	_Web deploy configuration_
 
@@ -268,13 +268,13 @@ Do not create the database yet, as it will be created by Entity Framework when r
 	* In **Password**, type your server administrator login password.
 	* Type a new database name, for example: _MVC4SampleDB_.
 
-	![Configuring destination connection string](Images/configuring-destination-connection-string.png?raw=true "Configuring destination connection string")
+	![Configuring destination connection string](images/configuring-destination-connection-string.png?raw=true "Configuring destination connection string")
 
 	_Configuring destination connection string_
 
 1. Then, click **OK**. When prompted to create the database, click **Yes**.
 
-	![Creating the database](Images/creating-the-database.png?raw=true "Creating the database string")
+	![Creating the database](images/creating-the-database.png?raw=true "Creating the database string")
 
 	_Creating the database_
 
@@ -282,19 +282,19 @@ Do not create the database yet, as it will be created by Entity Framework when r
 
 1. In the **Publish** page, click **Publish** to begin the application publishing process.
 
-	![Publish web application preview page](Images/publish-web-application-preview-page.png?raw=true "Publish web application preview page")
+	![Publish web application preview page](images/publish-web-application-preview-page.png?raw=true "Publish web application preview page")
 
 	_Publish web application preview page_
 
 1. Once the publishing process finishes, your default browser will open the published web site. Verify that the web site was successfully published in Windows Azure.
 
-	![Application published to Windows Azure](Images/application-published-to-windows-azure.png?raw=true "Application published to Windows Azure")
+	![Application published to Windows Azure](images/application-published-to-windows-azure.png?raw=true "Application published to Windows Azure")
 
 	_Application published to Windows Azure_
 
 1. Go to **/Person** to verify that the Persons views are working as expected. You can try adding a new Person to verify it is successfully saved to the database.
 
-	![Application Running](Images/application-running.png?raw=true "Application Running")
+	![Application Running](images/application-running.png?raw=true "Application Running")
 
 	_Add Person view_
 
@@ -312,13 +312,13 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 1. Go to the [Windows Azure Management Portal](https://manage.windowsazure.com/) and sign in using your Microsoft Account credentials associated with your subscription.
 
-	![Log on to Windows Azure portal](Images/login.png?raw=true "Log on to Windows Azure portal")
+	![Log on to Windows Azure portal](images/login.png?raw=true "Log on to Windows Azure portal")
 
 	_Log on to Windows Azure Management Portal_
 
 1. Click **New** on the command bar.
 
-	![Creating a new Web Site](Images/new-website.png?raw=true "Creating a new Web Site")
+	![Creating a new Web Site](images/new-website.png?raw=true "Creating a new Web Site")
 
 	_Creating a new Web Site_
 
@@ -326,7 +326,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 	> **Note:** A Windows Azure Web Site is the host for a web application running in the cloud that you can control and manage. The Quick Create option allows you to deploy a completed web application to the Windows Azure Web Site from outside the portal. It does not include steps for setting up a database.
 
-	![Creating a new Web Site using Quick Create](Images/quick-create.png?raw=true "Creating a new Web Site using Quick Create")
+	![Creating a new Web Site using Quick Create](images/quick-create.png?raw=true "Creating a new Web Site using Quick Create")
 
 	_Creating a new Web Site using Quick Create_
 
@@ -334,11 +334,11 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 1. Once the web site is created, click the link under the **URL** column. Check that the new web site is working.
 
-	![Browsing to the new web site](Images/navigate-website.png?raw=true "Browsing to the new web site")
+	![Browsing to the new web site](images/navigate-website.png?raw=true "Browsing to the new web site")
 
 	_Browsing to the new web site_
 
-	![Web site running](Images/website-working.png?raw=true "Web site running")
+	![Web site running](images/website-working.png?raw=true "Web site running")
 
 	_Web site running_
 
@@ -349,19 +349,19 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 1. Under the quick glance section, click **Set up Git publishing**.
 
-	![Set up Git publishing](Images/set-up-git-publishing.png?raw=true "Set up Git publishing")
+	![Set up Git publishing](images/set-up-git-publishing.png?raw=true "Set up Git publishing")
 
 	_Set up Git publishing_
 
 1. A message indicating that your Git repository is being created will appear.
 
-	![Creating Git Repository](Images/creating-git-repository.png?raw=true "Creating Git Repository")
+	![Creating Git Repository](images/creating-git-repository.png?raw=true "Creating Git Repository")
 
 	_Creating Git repository_
 
 1. Wait until your Git repository is ready to use before continue with the following task.
 
-	![Git repository ready](Images/git-repository-ready.png?raw=true)
+	![Git repository ready](images/git-repository-ready.png?raw=true)
 
 	_Git repository is ready_
 
@@ -394,7 +394,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 	git commit -m "Initial commit"
 	````
 
-	![Git initialization and first commit](Images/git-initialization-and-first-commit.png?raw=true "Git initialization and first commit")
+	![Git initialization and first commit](images/git-initialization-and-first-commit.png?raw=true "Git initialization and first commit")
 
 	_Git initialization and first commit_
 
@@ -406,7 +406,7 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 	git push azure master
 	````
 
-	![Pushing to Windows Azure](Images/pushing-to-windows-azure.png?raw=true "Pushing to Windows Azure")
+	![Pushing to Windows Azure](images/pushing-to-windows-azure.png?raw=true "Pushing to Windows Azure")
 
 	_Pushing to Windows Azure_
 
@@ -418,25 +418,25 @@ If you did not executed exercise 1 you can still perform this exercise by deploy
 
 1. Click **Deployments** to see the **deployment history**. Verify that there is an **Active Deployment** with your _"Initial Commit"_.
 
-	![Deployment](Images/deployment.png?raw=true "Deployment")
+	![Deployment](images/deployment.png?raw=true "Deployment")
 
 	_Active deployment_
 
 1. Finally, click **Browse** on the bottom bar to go to the web site. 
 
-	![Browse web site](Images/browse-web-site.png?raw=true "Browse web site")
+	![Browse web site](images/browse-web-site.png?raw=true "Browse web site")
 
 	_Browse web site_
 
 1. If the application was successfully deployed, you will see the ASP.NET MVC 4 template's default home page.
 
-	![Application Running in Windows Azure](Images/application-running-in-windows-azure.png?raw=true "Application Running in Windows Azure")
+	![Application Running in Windows Azure](images/application-running-in-windows-azure.png?raw=true "Application Running in Windows Azure")
 
 	_Application Running in Windows Azure_
 	
 1. Go to **/Person** to verify that the Persons views are working as expected. You can try adding a new Person to verify it is successfully saved to the database.
 
-	![Application Running](Images/application-running.png?raw=true "Application Running")
+	![Application Running](images/application-running.png?raw=true "Application Running")
 
 	_Add Person view_
 
