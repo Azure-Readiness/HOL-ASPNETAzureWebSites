@@ -2,21 +2,15 @@
 <DependencyCheckerConfiguration version="2.0">
 	<title>Building and Publishing ASP.NET Applications with Windows Azure Web Sites and Visual Studio 2010</title>
 	<dependencies>
-		<dependency  
-			hint="Microsoft Visual Studio 2010.*;10.0.30319"  
-			name="Microsoft Visual Studio 2010 SP1"  
-			description="Microsoft Visual Studio 2010" 
-			helpLink="wpi://vwd_rtw/"  
-			type="Uninstall" />
-		<dependency 
-			hint="ASP.NET MVC 4.*" 
-			name="Microsoft ASP.NET MVC 4" 
-			description="ASP.NET MVC 4 is a framework for building scalable, standards-based web applications using well-established design patterns and the power of ASP.NET and the .NET Framework." 
-			helpLink="http://www.asp.net/mvc/mvc4" 
-			type="Uninstall" />
+		<dependency
+			hint="MVC4Vs2010_Loc"
+			name="ASP.NET MVC 4 Tools Update with Language Packs (August 2012)"
+			helpLink=""
+			disableSkip="false"
+			type="WebPI" />
 		<dependency
 			hint="WebToolsExtensionPublishingVS2010_Only_1_0"
-			name="Microsoft Web Publish for Visual Studio 2010 (June 2012)"
+			name="Microsoft Web Publish for Visual Studio 2010 (August 2012)"
 			helpLink=""
 			type="WebPI" />
 		<dependency 

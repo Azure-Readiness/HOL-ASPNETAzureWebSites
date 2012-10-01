@@ -48,6 +48,7 @@ pkg
 ~$*
 *.dbmdl
 coverage
+packages
 *.docstates
 *.InstallLog
 DC.exe
