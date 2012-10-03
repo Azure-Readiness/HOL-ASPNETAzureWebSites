@@ -3,23 +3,21 @@
   <Id>ASPNETAzureWebSites</Id>
   <Technologies>
     <Technology>Windows Azure</Technology>
-	<Technology>ASP.NET MVC</Technology>
+    <Technology>ASP.NET MVC</Technology>
   </Technologies>
   <Author>
-	<Blog>
-	</Blog>
-	<Email>
-	</Email>	
+    <Blog></Blog>
+    <Email></Email>
     <Name></Name>
   </Author>
-  <Description>In this hands-on lab you will explore the basic elements of the Windows Azure Web Sites service by creating a simple ASP.NET MVC 4 application, which uses scaffolding to automatically generate the baseline of your application's CRUD (Create, Read, Update and Delete). You will then deploy the application using both Web Deploy from Visual Studio 2010 and Git.</Description>  
+  <Description>In this hands-on lab you will explore the basic elements of the Windows Azure Web Sites service by creating a simple ASP.NET MVC 4 application, which uses scaffolding to automatically generate the baseline of your application's CRUD (Create, Read, Update and Delete). You will then deploy the application using both Web Deploy from Visual Studio 2010 and Git.</Description>
   <Document ConversionType="Html">.\HOL.md</Document>
   <Title>Building and Publishing ASP.NET Applications with Windows Azure Web Sites and Visual Studio 2010</Title>
-  <Version>1.0.1</Version>
+  <Version>1.0.2</Version>
   <Source>.\Source</Source>
   <DependencyChecker>.\source\Setup\Dependencies.depi</DependencyChecker>
   <CustomProperties>
-  	<Property Name="ContentType" Value="VS2010" ></Property>
-	<Property Name="GitHubRepository" Value="https://github.com/WindowsAzure-TrainingKit/HOL-ASPNETAzureWebSites" />
-  </CustomProperties>   
-</Lab> 
+    <Property Name="ContentType" Value="VS2010"></Property>
+    <Property Name="GitHubRepository" Value="https://github.com/WindowsAzure-TrainingKit/HOL-ASPNETAzureWebSites" />
+  </CustomProperties>
+</Lab>
